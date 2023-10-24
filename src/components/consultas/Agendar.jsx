@@ -82,8 +82,8 @@ function Agendar({data}){
                         <div id="btnAgend" className="grid grid-cols-3 gap-2">
                             <button id="um" type="button" className="tipoAgendCard clicked rounded-lg px-5 py-5 flex flex-col gap-7">
                                 <div>
-                                    <h3 className="font-bold">Com Clube Eliel</h3>
-                                    <span className="text-zinc-700 text-sm">Para membros do clube Eliel Figueiredo.</span>
+                                    <h3 className="font-bold">Com HealthSys</h3>
+                                    <span className="text-zinc-700 text-sm">Para membros do clube HealthSys.</span>
                                 </div>
 
                                 <div className="flex flex-col">
@@ -94,8 +94,8 @@ function Agendar({data}){
                             </button>
                             <button id="dois" type="button" className="tipoAgendCard rounded-lg px-5 py-5 flex flex-col gap-7">
                                 <div>
-                                    <h3 className="font-bold">Com Clube Eliel</h3>
-                                    <span className="text-zinc-700 text-sm">Para membros do clube Eliel Figueiredo.</span>
+                                    <h3 className="font-bold">Com HealthSys</h3>
+                                    <span className="text-zinc-700 text-sm">Para membros do clube HealthSys.</span>
                                 </div>
 
                                 <div className="flex flex-col">
@@ -106,8 +106,8 @@ function Agendar({data}){
                             </button>
                             <button id="tres" type="button" className="tipoAgendCard rounded-lg px-5 py-5 flex flex-col gap-7">
                                 <div>
-                                    <h3 className="font-bold">Com Clube Eliel</h3>
-                                    <span className="text-zinc-700 text-sm">Para membros do clube Eliel Figueiredo.</span>
+                                    <h3 className="font-bold">Com HealthSys</h3>
+                                    <span className="text-zinc-700 text-sm">Para membros do clube HealthSys.</span>
                                 </div>
 
                                 <div className="flex flex-col">
