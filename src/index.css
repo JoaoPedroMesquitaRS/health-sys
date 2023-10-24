@@ -1,13 +1,273 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#menu{
+    position: fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heart::after{
+    content: '';
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('img/icons/heart.svg');
+}
+.lab::after{
+    content: '';
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('img/icons/lab.svg');
+}
+.vacina::after{
+    content: '';
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('img/icons/vacina.svg');
+}
+
+.fullStar::before{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./img/icons/fullStar.svg');
+    content: '';
+}
+
+.check::before{
+    content: '';
+    display: inline-block;
+    margin-bottom: -0.15rem;
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('img/icons/check_circle.svg');
+}
+
+#cartao-info{
+    background-color: #F4F4F4;
+}
+
+#cartao-form{
+    background-color: #F4F4F4;
+}
+
+.form-pag input{
+    background-color: transparent;
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: .5rem;
+    padding: 0 1rem;
+}
+
+.consInfoSelected{
+    color:rgb(16, 160, 64);
+    border-color: rgb(16, 160, 64);
+    border-bottom-width: 2px;
+}
+
+.clicked{
+    border-bottom-width: 2px;
+    border-color: rgb(16, 160, 64);
+    background-color: rgb(134, 239, 172,0.30);
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.consInfoCardNS{
+    visibility: hidden;
+    display: none;
+}
+
+.pin-location::before{
+    content: '';
+    background-image: url('./img/icons/pin-location.svg');
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-bottom: -0.15rem;
+    margin-right: .5rem;
+}
+
+.calender::before{
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: -0.15rem;
+    margin-right: .5rem;
+    background-image: url('./img/icons/calendar.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.facebook-icon::before{
+    content: '';
+    background-image: url('./img/icons/facebook.svg');
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -0.15rem;
+    display: inline-block;
+    margin-right: .5rem;    
+}
+
+.insta-icon::before{
+    content: '';
+    background-image: url('./img/icons/instagram.svg');
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -0.15rem;
+    display: inline-block;
+    margin-right: .5rem;    
+}
+
+.cartao-cred::before{
+    content: '';
+    background-image: url('./img/icons/cartao-cred.svg');
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -0.15rem;
+    display: inline-block;
+    margin-right: .5rem;    
+}
+
+.boleto::before{
+    content: '';
+    background-image: url('./img/icons/boleto.svg');
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -0.15rem;
+    display: inline-block;
+    margin-right: .5rem;    
+}
+
+.pix::before{
+    content: '';
+    background-image: url('./img/icons/pix.svg');
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -0.15rem;
+    display: inline-block;
+    margin-right: .5rem;    
+}
+
+.pagar-local::before{
+    content: '';
+    background-image: url('./img/icons/pagar-local.svg');
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -0.15rem;
+    display: inline-block;
+    margin-right: .5rem;    
+}
+
+.linkedin-icon::before{
+    content: '';
+    background-image: url('./img/icons/linkedIn.svg');
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -0.15rem;
+    display: inline-block;
+    margin-right: .5rem;    
+}
+
+@media screen and (max-width: 582px) {
+    .home-sec, #menu{
+        padding: 0 5rem;
+    }
+
+    #menu img{
+        width: 10rem;
+    }
+
+    #btn-pedirCartao{
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    #menu div > ul{
+        gap: .7rem;
+        margin-left: -2rem;
+    }
+
+    .home-sec-um{
+        flex-direction: column;
+        padding: 7rem 0 3rem 0;
+    }
+
+    .home-sec-um img{
+        display: none;
+    }
+
+    .home-sec-um div{
+        width: 100% !important;
+        align-items: center;
+    }
+
+    #cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #consultaCards{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #cartao-info{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 3rem;
+    }
+
+    #cartao-info div{
+        width: 100%;
+    }
+
+    #cartao-form{
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #cartao-form div{
+        width: 100%;
+    }
+
+    #cartao-form div > img{
+        display: none;
+    }
 }

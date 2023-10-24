@@ -1,0 +1,77 @@
+{
+
+    "cidades": [
+        {
+            "id": 1,
+            "nome": "São Paulo - SP"
+        },
+        {
+            "id": 2,
+            "nome": "Santos - SP"
+        },
+        {
+            "id": 3,
+            "nome": "Rio de Janeiro - RJ"
+        },
+        {
+            "id": 1,
+            "nome": "Niterói - RJ"
+        }
+    ],
+    "infoCard": [
+        {
+            "id": 1,
+            "icon": "../img/icons/heart.svg",
+            "tipo": "heart",
+            "nome": "Consultas",
+            "desc": "Maecenas metus erat, viverra ac viverra vitae, imperdiet non dui. Integer eu nisl sed augue pretium tincidunt et non ante."
+        },
+        {
+            "id": 2,
+            "icon": "../img/icons/lab.svg",
+            "tipo": "lab",
+            "nome": "Exames Laboratorias",
+            "desc": "Maecenas metus erat, viverra ac viverra vitae, imperdiet non dui. Integer eu nisl sed augue pretium tincidunt et non ante."
+        },
+        {
+            "id": 3,
+            "icon": "../img/icons/vacina.svg",
+            "nome": "Vacinas",
+            "tipo": "vacina",
+            "desc": "Maecenas metus erat, viverra ac viverra vitae, imperdiet non dui. Integer eu nisl sed augue pretium tincidunt et non ante."
+        }
+    ],
+    "consultaCard": [
+        {
+            "id": 1,
+            "nome": "Cardiologia",
+            "preco": "90,00"
+        },
+        {
+            "id": 2,
+            "nome": "Urologia",
+            "preco": "79,00"
+        },
+        {
+            "id": 3,
+            "nome": "Otorrinolaringologia",
+            "preco": "85,00"
+        },
+        {
+            "id": 4,
+            "nome": "Endocrinologia",
+            "preco": "99,00"
+        },
+        {
+            "id": 5,
+            "nome": "Otorrinolaringologia",
+            "preco": "80,00"
+        },
+        {
+            "id": 6,
+            "nome": "Endocrinologia",
+            "preco": "190,00"
+        }
+    ]
+
+}
